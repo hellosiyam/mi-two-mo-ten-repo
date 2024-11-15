@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform</title>
+    <style>
+        .transform{
+            margin: 50px;
+        }
+        .continer, .box{
+            height: 200px;
+            width: 200px;
+        }
+        .continer{
+            border:1px solid blue;
+            background-color: aquamarine;
+
+        }
+        .box{
+            border: 1px solid orangered;
+            background-color: coral;
+            /* transform: scale(25%, 50%); */
+            /* transform: rotate(45deg) scale(50%) translateX(75px); */
+        }
+        .box:hover{
+            transform: rotate(45deg) scale(50%) translateY(200px);
+        }
+    
+    </style>
 </head>
 <body>
-    
+    <section class="transform">
+        <div class="continer">
+            <div class="box">Box-1</div>
+        </div>
+        <div class="continer">
+            <div class="box">Box-1</div>
+        </div>
+        <div class="continer">
+            <div class="box">Box-1</div>
+        </div>
+    </section>
 </body>
 </html>
